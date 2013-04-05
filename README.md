@@ -1,7 +1,7 @@
-modalize.js
+jquery.modalize.js
 ========
 
-modalize.js is a lightweight, pure-javascript approach to automatically turn part of any web page into a modal overlay.  
+[jquery.modalize.js](https://github.com/toddway/jquery.modalize) is a lightweight, pure-javascript approach to automatically turn part of any web page into a modal overlay.  
 
 It was originally designed as a simple alternative for associating file upload fields to WYSIWYGs in Drupal, but can be used to modalize any chunk of HTML on any page (Drupal or non-Drupal) and significantly clean up overloaded pages. 
 
@@ -20,14 +20,14 @@ This is reliable and works nicely, but has a few drawbacks:
 3. If you have more than one WYSIWYG on a page it's even harder to infer the associations.
 
 ## The new modally-powered solution
-With modalize.js, I start with my usual solution (as described above), add a single line of jQuery to turn my file fields into modals, and attach them to every WYSIWYG on the page. 
+With jquery.modalize.js, I start with my usual solution (as described above), add a single line of jQuery to turn my file fields into modals, and attach them to every WYSIWYG on the page. 
 
 <img src="https://dl.dropbox.com/u/862951/md/modal-links.png" style="border:1px solid #ccc;width:400px"/>
 
 <img src="https://dl.dropbox.com/u/862951/md/opened-modal.png" style="border:1px solid #ccc;width:400px"/>
 
 
-Here's the code:
+To use it you just need JQuery, jquery.modalize.js, and a line of code like this:
 
     $.modalize('#edit-field-image-attachments', '+ Attach images', '.field-type-text-with-summary');
      
